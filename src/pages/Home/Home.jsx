@@ -30,9 +30,13 @@ export default function Home() {
         </div>
     </div>
   </div>
-  <div className="cursor-pointer w-fit mt-4 md:mt-0">
-    <img src="/Home/homeImg.png" alt="home img viewer" className="w-60 h-1/2 hover:bg-gradient-to-l from-[#984300] via-[#FD6F00] to-[#CA5900] hover:rounded-full transition-colors duration-500" />
+  <div className="cursor-pointer w-fit mt-9 md:mt-0">
+    <img src="/Home/home1.png" alt="home img viewer" className="w-60 h-1/2 bg-[#5757571c] rounded-full hover:bg-gradient-to-l from-[#984300] via-[#FD6F00] to-[#CA5900] hover:rounded-full transition-colors duration-500" />
   </div>
+</div>
+
+<div className='wrapper mt-36'>
+    <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>Services</h2>
 </div>
     </div>
   )
