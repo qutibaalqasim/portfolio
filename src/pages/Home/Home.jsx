@@ -48,23 +48,23 @@ export default function Home() {
     </p>
 
     <div className='grid grid-cols-1 md:grid-cols-2 mt-6 md:mt-20 gap-4 md:gap-10'>
-      <div className='bg-[#5757571c] rounded-md flex flex-col text-center items-center'>
-       <img src="/Home/services/frontEnd.png" alt="Front-End img" className='w-36 h-36 rounded mt-8'/>
-       <h3 className='text-[#FD6F00] font-bold text-xl md:text-2xl mt-2 md:mt-4'>Front-End</h3>
-       <p className='font-medium text-base md:text-xl text-[#575757] mt-4 md:mt-8 mx-2 md:mx-4'>
-         building any Front-End website via (html,css,javaScript,Bootstrap,tailwindCss,React)
-        based on your needs and suggestions , I can also build it from the scratch independently or with a team.
-       </p>
-      </div>
-      <div className='bg-[#5757571c] rounded-md flex flex-col text-center items-center'>
-       <img src="/Home/services/backend.jpg" alt="Back-End img" className='w-36 h-36 rounded mt-8'/>
-       <h3 className='text-[#FD6F00] font-bold text-xl md:text-2xl mt-2 md:mt-4'>Back-End</h3>
-       <p className='font-medium text-base md:text-xl text-[#575757] mt-4 md:mt-8 mx-2 md:mx-4'>
-       creating API's from scratch with NodeJs, and using (MySQL, MongoDB) databases and using (sequalize) orm for MySQL,
-       and (mongoose) odm for MongoDB , and  deal with a lot of backages like (jsonWebToken, bcryptjs , joi , nodemailer , etc...).
-       </p>
-      </div>
-    </div>
+  <div className='bg-[#5757571c] rounded-md flex flex-col text-center items-center min-w-0 p-4'>
+    <img src="/Home/services/frontEnd.png" alt="Front-End img" className='w-36 h-36 rounded mt-8'/>
+    <h3 className='text-[#FD6F00] font-bold text-xl md:text-2xl mt-2 md:mt-4'>Front-End</h3>
+    <p className='font-medium text-base md:text-xl text-[#575757] mt-4 md:mt-8 mx-2 md:mx-4 break-words'>
+      Building any Front-End website via (HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React)
+      based on your needs and suggestions. I can also build it from scratch independently or with a team.
+    </p>
+  </div>
+  <div className='bg-[#5757571c] rounded-md flex flex-col text-center items-center min-w-0 p-4'>
+    <img src="/Home/services/backend.jpg" alt="Back-End img" className='w-36 h-36 rounded mt-8'/>
+    <h3 className='text-[#FD6F00] font-bold text-xl md:text-2xl mt-2 md:mt-4'>Back-End</h3>
+    <p className='font-medium text-base md:text-xl text-[#575757] mt-4 md:mt-8 mx-2 md:mx-4 break-words'>
+      Creating APIs from scratch with Node.js, and using (MySQL, MongoDB) databases. Using (Sequelize) ORM for MySQL
+      and (Mongoose) ODM for MongoDB. I also work with packages like (jsonwebtoken, bcryptjs, joi, nodemailer, etc.).
+    </p>
+  </div>
+</div>
 </div>
 
 
@@ -72,9 +72,10 @@ export default function Home() {
   <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>AboutMe</h2>
   <p className='font-medium text-base md:text-xl text-[#707070] text-center mt-4'>Front-End and Back-End Developer</p>
 
-  <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-24'>
-    <img src="/Home/AboutMe/AboutMe.png" alt="AboutMe img.png" className='w-600 h-3/4 bg-[#5757571c] rounded-full hover:bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] duration-200'/>
-    <p className='font-medium text-base md:text-xl text-[#959595]'>
+  <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-16 md:gap-24 mt-16  md:mt-10'>
+    
+    <img src="/Home/AboutMe/AboutMe.png" alt="AboutMe img.png" className=' bg-[#5757571c] rounded-full cursor-pointer hover:bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] duration-500'/>
+    <p className='font-medium text-base/8 md:text-xl/8 text-[#959595] text-center font-stretch-expanded'>
       My name is Qutiba Ahmad Ismael Abdaljawwad I'm 26 years old, I'm a Full-Stack Devloper, I got a bachelores degree in computer Science from
       Alquds-University in 2024 , I joined a Full-Stack Course with Knowledge Academy From 7th March 2024 to 10th March 2025.
       before this course I was training in Dimension Company (Lua, js, etc...) about 6 months, and worked with Reach company (call Center) about 3 months.
