@@ -52,7 +52,7 @@ export default function Home() {
        <img src="/Home/services/frontEnd.png" alt="Front-End img" className='w-36 h-36 rounded mt-8'/>
        <h3 className='text-[#FD6F00] font-bold text-xl md:text-2xl mt-2 md:mt-4'>Front-End</h3>
        <p className='font-medium text-base md:text-xl text-[#575757] mt-4 md:mt-8 mx-2 md:mx-4'>
-        I can build any Front-End website via (html,css,javaScript,Bootstrap,tailwindCss,React)
+         building any Front-End website via (html,css,javaScript,Bootstrap,tailwindCss,React)
         based on your needs and suggestions , I can also build it from the scratch independently or with a team.
        </p>
       </div>
@@ -60,7 +60,8 @@ export default function Home() {
        <img src="/Home/services/backend.jpg" alt="Back-End img" className='w-36 h-36 rounded mt-8'/>
        <h3 className='text-[#FD6F00] font-bold text-xl md:text-2xl mt-2 md:mt-4'>Back-End</h3>
        <p className='font-medium text-base md:text-xl text-[#575757] mt-4 md:mt-8 mx-2 md:mx-4'>
-       
+       creating API's from scratch with NodeJs, and using (MySQL, MongoDB) databases and using (sequalize) orm for MySQL,
+       and (mongoose) odm for MongoDB , and  deal with a lot of backages like (jsonWebToken, bcryptjs , joi , nodemailer , etc...).
        </p>
       </div>
     </div>
