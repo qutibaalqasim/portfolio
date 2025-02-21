@@ -85,7 +85,7 @@ export default function Home() {
 </div>
 
 
-<div id='Skils' className='wrapper mt-24 md:mt-36'>
+<div id='Skills' className='wrapper mt-24 md:mt-36'>
 <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>Skills</h2>
 <h4 className='font-bold text-3xl md:text-4xl text-[#959595] mt-2'>USING NOW:</h4>
 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 md:mt-20 gap-4'>
@@ -158,6 +158,18 @@ export default function Home() {
       <img src="/public/Home/skils/Ts.svg" alt="TypeScript logo" />
       <span className='font-bold text-2xl text-[#959595]'>TypeScript</span>
     </div>
+</div>
+</div>
+
+<div id='Portfolio' className='wrapper mt-24 md:mt-36'>
+<h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>Portfolio</h2>
+<div className='flex justify-center items-center gap-4 mt-6 md:mt-10'>
+  <button className='py-[10px] md:py-[14px] px-5 md:px-10 font-bold text-sm md:text-base text-white bg-[#5757571c] rounded hover:bg-gradient-to-r from-[#FD6F00] to-[#E46400] transition-all duration-200'>
+    Front-End
+  </button>
+  <button className='py-[10px] md:py-[14px] px-5 md:px-10 font-bold text-sm md:text-base text-white bg-[#5757571c] rounded hover:bg-gradient-to-r from-[#FD6F00] to-[#E46400] transition-all duration-200'>
+    Back-End
+  </button>
 </div>
 </div>
     </div>

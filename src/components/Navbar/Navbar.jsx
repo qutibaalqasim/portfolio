@@ -28,7 +28,10 @@ export default function Navbar() {
           <a href='#AboutMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</Link>
+          <a href='#Skills' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Skills</a>
+        </li>
+        <li>
+          <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
           <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</Link>
@@ -48,7 +51,10 @@ export default function Navbar() {
           <a href='#AboutMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</Link>
+          <a href='#Skills' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Skills</a>
+        </li>
+        <li>
+          <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
           <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</Link>
