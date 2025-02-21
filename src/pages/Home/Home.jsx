@@ -83,6 +83,83 @@ export default function Home() {
     </p>
   </div>
 </div>
+
+
+<div id='Skils' className='wrapper mt-24 md:mt-36'>
+<h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>Skills</h2>
+<h4 className='font-bold text-3xl md:text-4xl text-[#959595] mt-2'>USING NOW:</h4>
+<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 md:mt-20 gap-4'>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/Home/skils/html.svg" alt="html logo" />
+      <span className='font-bold text-2xl text-[#959595]'>html</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/css.svg" alt="css logo" />
+      <span className='font-bold text-2xl text-[#959595]'>Css</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/Js.svg" alt="javaScript logo" />
+      <span className='font-bold text-2xl text-[#959595]'>javaScript</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/bootstrap.svg" alt="BootStrap logo" />
+      <span className='font-bold text-2xl text-[#959595]'>BootStrap</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/es6.png" alt="Es6 logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>Es6</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/figma.svg" alt="Figma logo" />
+      <span className='font-bold text-2xl text-[#959595]'>Figma</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/github.png" alt="GitHub logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>GitHub</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/tailwind.png" alt="Tailwind logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>Tailwind</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/react.svg" alt="React logo" />
+      <span className='font-bold text-2xl text-[#959595]'>React</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/nodejs.svg" alt="NodeJs logo" />
+      <span className='font-bold text-2xl text-[#959595]'>NodeJs</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/Mysql.svg" alt="MySql logo" />
+      <span className='font-bold text-2xl text-[#959595]'>MySql</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/sequelize.svg" alt="Sequalize logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>Sequalize</span>
+    </div>
+    
+</div>
+
+<h4 className='font-bold text-3xl md:text-4xl text-[#959595] mt-2'>Learning:</h4>
+<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 md:mt-20 gap-4'>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/MongoDb.svg" alt="MongoDB logo" />
+      <span className='font-bold text-2xl text-[#959595]'>MongoDB</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/mongoose.png" alt="Mongoose logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>Mongoose</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/redux.svg" alt="Redux logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>Redux</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/Ts.svg" alt="TypeScript logo" />
+      <span className='font-bold text-2xl text-[#959595]'>TypeScript</span>
+    </div>
+</div>
+</div>
     </div>
   )
 }
