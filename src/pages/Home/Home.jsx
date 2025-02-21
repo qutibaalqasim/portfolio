@@ -72,8 +72,14 @@ export default function Home() {
   <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>AboutMe</h2>
   <p className='font-medium text-base md:text-xl text-[#707070] text-center mt-4'>Front-End and Back-End Developer</p>
 
-  <div>
-
+  <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-24'>
+    <img src="/Home/AboutMe/AboutMe.png" alt="AboutMe img.png" className='w-600 h-3/4 bg-[#5757571c] rounded-full hover:bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] duration-200'/>
+    <p className='font-medium text-base md:text-xl text-[#959595]'>
+      My name is Qutiba Ahmad Ismael Abdaljawwad I'm 26 years old, I'm a Full-Stack Devloper, I got a bachelores degree in computer Science from
+      Alquds-University in 2024 , I joined a Full-Stack Course with Knowledge Academy From 7th March 2024 to 10th March 2025.
+      before this course I was training in Dimension Company (Lua, js, etc...) about 6 months, and worked with Reach company (call Center) about 3 months.
+      now I just learning more and more about full-stack development to improve myself for this position. 
+    </p>
   </div>
 </div>
     </div>
