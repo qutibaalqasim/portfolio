@@ -3,7 +3,7 @@ import App from './App.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
-  <div className='bg-mainbg'>
+  <div className='bg-mainbg '>
     <App />
   </div>,
 )

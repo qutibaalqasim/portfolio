@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
   return (
     <div>
-       <div className="wrapper flex flex-col md:flex-row justify-center md:justify-between items-center text-center md:text-left">
+       <div id='home' className="wrapper flex flex-col md:flex-row justify-center md:justify-between items-center text-center md:text-left">
   <div className="flex flex-col items-center md:items-start">
     <span className="font-semibold text-base md:text-2xl text-[#707070]">Hi I am</span>
     <h3 className="font-bold text-xl md:text-3xl text-[#959595] mt-[10px]">Qutiba Alqasim</h3>
@@ -38,7 +38,7 @@ export default function Home() {
   </div>
 </div>
 
-<div className='wrapper mt-36'>
+<div id='services' className='wrapper mt-24 md:mt-36'>
     <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>Services</h2>
     <p className='font-medium text-base md:text-xl text-[#707070] text-center mt-4'>
       As A Full-Stack Developer, I specialize building scalabel and user-friendly web Applications.
@@ -65,6 +65,16 @@ export default function Home() {
        </p>
       </div>
     </div>
+</div>
+
+
+<div id='AboutMe' className='wrapper mt-24 md:mt-36'>
+  <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>AboutMe</h2>
+  <p className='font-medium text-base md:text-xl text-[#707070] text-center mt-4'>Front-End and Back-End Developer</p>
+
+  <div>
+
+  </div>
 </div>
     </div>
   )

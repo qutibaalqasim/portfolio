@@ -13,13 +13,13 @@ export default function Footer() {
       
       <ul className='flex items-center justify-center flex-wrap gap-16 mt-0'>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</Link>
+          <a href='#home' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</Link>
+          <a href='#services' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</Link>
+          <a href='#AboutMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
         </li>
         <li>
           <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</Link>

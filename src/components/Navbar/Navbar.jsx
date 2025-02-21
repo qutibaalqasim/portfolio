@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className='flex  justify-between wrapper'>
+    <div className='flex justify-between wrapper'>
       <a href="#">    
           <img src="/navbar/logo.png" alt="" width={"120px"} height={"30px"} />
       </a>
@@ -19,13 +19,13 @@ export default function Navbar() {
           {isOpen && (
         <ul className='flex flex-col gap-4 absolute bg-black'>
          <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</Link>
+          <a href='#home' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</Link>
+        <a href="#services" className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</Link>
+          <a href='#AboutMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
         </li>
         <li>
           <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</Link>
@@ -39,13 +39,13 @@ export default function Navbar() {
       </div>
       <ul className='hidden 2md:flex items-center gap-16'>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</Link>
+          <a href='#home' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</Link>
+          <a href="#services" className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</Link>
+          <a href='#AboutMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
         </li>
         <li>
           <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</Link>
