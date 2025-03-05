@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function Home() {
   const [active, setActive] = useState('FrontEnd');
+  const [click , setClicked] = useState(null);
   return (
     <div>
        <div id='home' className="wrapper flex flex-col md:flex-row justify-center md:justify-between items-center text-center md:text-left">
@@ -139,7 +140,7 @@ export default function Home() {
       <span className='font-bold text-2xl text-[#959595]'>Sequalize</span>
     </div>
     <div className='flex flex-col justify-center items-center'>
-      <img src="/public/Home/skils/java.svg" alt="java logo" className='w-20 h-24' />
+      <img src="/Home/skils/java.svg" alt="java logo" className='w-20 h-24' />
       <span className='font-bold text-2xl text-[#959595]'>java</span>
     </div>
     
@@ -188,7 +189,9 @@ export default function Home() {
     <img src="/Home/portfolio/FrontEnd/bootstrap.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
     <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
       <a href="https://qutibaalqasim.github.io/Bootstrap-project/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Saloon Beauty</a>
-      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      <button
+      onClick={()=> setClicked('bootstrap-project')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
   </div>
   <div className='px-0 md:px-20 hover:px-0 duration-300'>
@@ -216,6 +219,16 @@ export default function Home() {
 
 )}
 
+{click == 'bootstrap-project' && (
+    <div className='fixed z-[9999] bg-[#5757571c] rounded w-full  text-center'>
+      
+          <h2 className='font-bold text-white'>Bootstrap FronEnd</h2>
+     
+    </div>
+      
+    ) }
+
+
 {active == 'BackEnd' && (
   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[18px] md:gap-4 mt-8 md:mt-16 mb-24 md:mb-36 '>
 
@@ -242,6 +255,7 @@ export default function Home() {
 
 
 </div>
+
     </div>
   )
 }
