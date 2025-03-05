@@ -137,6 +137,10 @@ export default function Home() {
       <img src="/Home/skils/sequelize.svg" alt="Sequalize logo" className='w-20 h-24' />
       <span className='font-bold text-2xl text-[#959595]'>Sequalize</span>
     </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/public/Home/skils/java.svg" alt="java logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>java</span>
+    </div>
     
 </div>
 
@@ -171,6 +175,44 @@ export default function Home() {
     Back-End
   </button>
 </div>
+
+<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[18px] md:gap-4 mt-8 md:mt-16 mb-24 md:mb-36'>
+    <div className='px-0 md:px-20 hover:px-0 duration-300'>
+      <img src="/Home/portfolio/bootstrap.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
+      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+        <a href="https://qutibaalqasim.github.io/Bootstrap-project/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Saloon Beauty</a>
+        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      </div>
+    </div>
+    <div className='px-0 md:px-20 hover:px-0 duration-300'>
+      <img src="/Home/portfolio/land.png" alt="landing Page img" className='w-auto h-64 rounded-t' />
+      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+        <a href="https://qutibaalqasim.github.io/LandingProject/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
+        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      </div>
+    </div>
+    <div className='px-0 md:px-20 hover:px-0 duration-300'>
+      <img src="/Home/portfolio/tailwind.png" alt="Netflex project img" className='w-auto h-64 rounded-t' />
+      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+        <a href="https://qutibaalqasim.github.io/NetFlex/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Netflex</a>
+        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      </div>
+    </div>
+    <div className='px-0 md:px-20 hover:px-0 duration-300'>
+      <img src="/Home/portfolio/tailwindLand.png" alt="Land page img" className='w-auto h-64 rounded-t' />
+      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+        <a href="https://qutibaalqasim.github.io/LandingPage-Tailwind/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
+        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      </div>
+    </div>
+</div>
+
+
+<div>
+
+</div>
+
+
 </div>
     </div>
   )
