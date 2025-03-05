@@ -207,14 +207,18 @@ export default function Home() {
     <img src="/Home/portfolio/FrontEnd/tailwind.png" alt="Netflex project img" className='w-auto h-64 rounded-t' />
     <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
       <a href="https://qutibaalqasim.github.io/NetFlex/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Netflex</a>
-      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      <button
+      onClick={()=> setClicked('netflex')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
   </div>
   <div className='px-0 md:px-20 hover:px-0 duration-300'>
     <img src="/Home/portfolio/FrontEnd/tailwindLand.png" alt="Land page img" className='w-auto h-64 rounded-t' />
     <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
       <a href="https://qutibaalqasim.github.io/LandingPage-Tailwind/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
-      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      <button
+      onClick={()=> setClicked('tailwind-Land')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
   </div>
 </div>
@@ -276,7 +280,7 @@ export default function Home() {
              </div>
              <div className='pt-2'>
              <h3 className='font-bold text-white text-3xl'>Design:</h3>
-             <p className='text-slate-300 text-base '>it's not responsive as all but it have alot of features and applying for computers only</p>
+             <p className='text-slate-300 text-base '>it's not responsive as all but it have alot of features and applying for computers only yet</p>
              </div>
           </div>
           
@@ -313,6 +317,69 @@ export default function Home() {
     </div>  
     )}
 
+{click == 'netflex' && (
+    <div className='fixed top-0  rounded w-full h-screen'>
+      
+        <button
+        onClick={()=>setClicked(null)}
+        className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+        </button>
+     
+          <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+          <h2 className='font-bold text-white text-6xl pt-2'>Netflex</h2>
+          <p className='font-medium text-base text-slate-300 pt-2'>
+            A Netflex project is a Front-End project hasing alot of features it allows user to watch movies and shows 
+            in their favorite locations and time.
+            and having a rating on all film with testimonials and more about the movies category and its suitable for all devices ...
+             </p>
+             <div className='pt-2'>
+              <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+              <ul>
+                <li className='text-slate-300 text-base '>html</li>
+                <li className='text-slate-300 text-base '>js</li>
+                <li className='text-slate-300 text-base '>tailwindCss</li>
+              </ul>
+             </div>
+             <div className='pt-2'>
+             <h3 className='font-bold text-white text-3xl'>Design:</h3>
+             <p className='text-slate-300 text-base '>it's full responsive and has alot of features it's suitable for all devices</p>
+             </div>
+          </div>
+          
+    </div>  
+    )}
+
+{click == 'tailwind-Land' && (
+    <div className='fixed top-0  rounded w-full h-screen'>
+      
+        <button
+        onClick={()=>setClicked(null)}
+        className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+        </button>
+     
+          <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+          <h2 className='font-bold text-white text-6xl pt-2'>Tailwind Landing Page</h2>
+          <p className='font-medium text-base text-slate-300 pt-2'>
+            this landing page for building digital products you can build any kind of digital product 
+            and show it to your customers you can also put any tistimonial or rating on any work  
+             </p>
+             <div className='pt-2'>
+              <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+              <ul>
+                <li className='text-slate-300 text-base '>html</li>
+                <li className='text-slate-300 text-base '>tailwindCss</li>
+              </ul>
+             </div>
+             <div className='pt-2'>
+             <h3 className='font-bold text-white text-3xl'>Design:</h3>
+             <p className='text-slate-300 text-base '>it's full responsive but it still landing bage without any functions in it</p>
+             </div>
+          </div>
+          
+    </div>  
+    )}
 
 
     </div>
