@@ -198,7 +198,9 @@ export default function Home() {
     <img src="/Home/portfolio/FrontEnd/land.png" alt="landing Page img" className='w-auto h-64 rounded-t' />
     <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
       <a href="https://qutibaalqasim.github.io/LandingProject/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
-      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      <button 
+      onClick={()=> setClicked('simpleLanding')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
   </div>
   <div className='px-0 md:px-20 hover:px-0 duration-300'>
@@ -280,6 +282,38 @@ export default function Home() {
           
     </div>  
     )}
+
+{click == 'simpleLanding' && (
+    <div className='fixed top-0  rounded w-full h-screen'>
+      
+        <button
+        onClick={()=>setClicked(null)}
+        className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+        </button>
+     
+          <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+          <h2 className='font-bold text-white text-6xl pt-2'>Simple Landing Page</h2>
+          <p className='font-medium text-base text-slate-300 pt-2'>
+            this landing page is for a courses website that provides alot of courses to the students of the University and let them know the price and time for each course 
+             </p>
+             <div className='pt-2'>
+              <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+              <ul>
+                <li className='text-slate-300 text-base '>html</li>
+                <li className='text-slate-300 text-base '>css</li>
+              </ul>
+             </div>
+             <div className='pt-2'>
+             <h3 className='font-bold text-white text-3xl'>Design:</h3>
+             <p className='text-slate-300 text-base '>it's responsive as all but it still a landing page with just html and css without actions</p>
+             </div>
+          </div>
+          
+    </div>  
+    )}
+
+
 
     </div>
   )
