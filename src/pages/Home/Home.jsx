@@ -219,14 +219,7 @@ export default function Home() {
 
 )}
 
-{click == 'bootstrap-project' && (
-    <div className='fixed z-[9999] bg-[#5757571c] rounded w-full  text-center'>
-      
-          <h2 className='font-bold text-white'>Bootstrap FronEnd</h2>
-     
-    </div>
-      
-    ) }
+
 
 
 {active == 'BackEnd' && (
@@ -255,6 +248,38 @@ export default function Home() {
 
 
 </div>
+
+{click == 'bootstrap-project' && (
+    <div className='fixed top-0  rounded w-full h-screen'>
+      
+        <button
+        onClick={()=>setClicked(null)}
+        className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+        </button>
+     
+          <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+          <h2 className='font-bold text-white text-6xl pt-2'>Bootstrap FronEnd</h2>
+          <p className='font-medium text-base text-slate-300 pt-2'>A SaloonBeauty is a Front-End project allows the user to choose what they want and when they need it, 
+            it's helpful to save time for customers they havn't time to go to saloons, the worker will be in the location in the time 
+             </p>
+             <div className='pt-2'>
+              <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+              <ul>
+                <li className='text-slate-300 text-base '>html</li>
+                <li className='text-slate-300 text-base '>css</li>
+                <li className='text-slate-300 text-base '>js</li>
+                <li className='text-slate-300 text-base '>bootstrap</li>
+              </ul>
+             </div>
+             <div className='pt-2'>
+             <h3 className='font-bold text-white text-3xl'>Design:</h3>
+             <p className='text-slate-300 text-base '>it's not responsive as all but it have alot of features and applying for computers only</p>
+             </div>
+          </div>
+          
+    </div>  
+    )}
 
     </div>
   )
