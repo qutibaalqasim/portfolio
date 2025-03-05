@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <div className=' pt-7 bg-[#5757571c]'>
+    <div id='Footer' className=' pt-7 bg-[#5757571c]'>
       <div className='wrapper'>
       <div className='flex justify-center'>
         <a href="#">
@@ -28,7 +28,7 @@ export default function Footer() {
           <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</Link>
+          <a href='#Footer' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
         </li>
       </ul>
       <div className='flex items-center justify-center mt-4'>

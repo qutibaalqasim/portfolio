@@ -34,7 +34,7 @@ export default function Navbar() {
           <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</Link>
+          <a href='#Footer' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
         </li>
         </ul>
       )}
@@ -57,7 +57,7 @@ export default function Navbar() {
           <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
-          <Link to={"/home"} className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</Link>
+          <a href='#Footer' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
         </li>
       </ul>
     </div>
