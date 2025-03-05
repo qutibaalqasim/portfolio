@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Home() {
+  const [active, setActive] = useState('FrontEnd');
   return (
     <div>
        <div id='home' className="wrapper flex flex-col md:flex-row justify-center md:justify-between items-center text-center md:text-left">
@@ -168,49 +169,76 @@ export default function Home() {
 <div id='Portfolio' className='wrapper mt-24 md:mt-36'>
 <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>Portfolio</h2>
 <div className='flex justify-center items-center gap-4 mt-6 md:mt-10'>
-  <button className='py-[10px] md:py-[14px] px-5 md:px-10 font-bold text-sm md:text-base text-white bg-[#5757571c] rounded hover:bg-gradient-to-r from-[#FD6F00] to-[#E46400] transition-all duration-200'>
+  <button 
+ onClick={()=>setActive('FrontEnd')} 
+  className='py-[10px] md:py-[14px] px-5 md:px-10 font-bold text-sm md:text-base text-white bg-[#5757571c] rounded hover:bg-gradient-to-r from-[#FD6F00] to-[#E46400] transition-all duration-200'>
     Front-End
   </button>
-  <button className='py-[10px] md:py-[14px] px-5 md:px-10 font-bold text-sm md:text-base text-white bg-[#5757571c] rounded hover:bg-gradient-to-r from-[#FD6F00] to-[#E46400] transition-all duration-200'>
+
+  <button
+  onClick={()=>setActive('BackEnd')}
+  className='py-[10px] md:py-[14px] px-5 md:px-10 font-bold text-sm md:text-base text-white bg-[#5757571c] rounded hover:bg-gradient-to-r from-[#FD6F00] to-[#E46400] transition-all duration-200'>
     Back-End
   </button>
 </div>
 
-<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[18px] md:gap-4 mt-8 md:mt-16 mb-24 md:mb-36'>
-    <div className='px-0 md:px-20 hover:px-0 duration-300'>
-      <img src="/Home/portfolio/bootstrap.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
-      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
-        <a href="https://qutibaalqasim.github.io/Bootstrap-project/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Saloon Beauty</a>
-        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
-      </div>
+{active == 'FrontEnd' &&(
+  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[18px] md:gap-4 mt-8 md:mt-16 mb-24 md:mb-36'>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/FrontEnd/bootstrap.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://qutibaalqasim.github.io/Bootstrap-project/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Saloon Beauty</a>
+      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
-    <div className='px-0 md:px-20 hover:px-0 duration-300'>
-      <img src="/Home/portfolio/land.png" alt="landing Page img" className='w-auto h-64 rounded-t' />
-      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
-        <a href="https://qutibaalqasim.github.io/LandingProject/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
-        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
-      </div>
+  </div>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/FrontEnd/land.png" alt="landing Page img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://qutibaalqasim.github.io/LandingProject/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
+      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
-    <div className='px-0 md:px-20 hover:px-0 duration-300'>
-      <img src="/Home/portfolio/tailwind.png" alt="Netflex project img" className='w-auto h-64 rounded-t' />
-      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
-        <a href="https://qutibaalqasim.github.io/NetFlex/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Netflex</a>
-        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
-      </div>
+  </div>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/FrontEnd/tailwind.png" alt="Netflex project img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://qutibaalqasim.github.io/NetFlex/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>Netflex</a>
+      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
-    <div className='px-0 md:px-20 hover:px-0 duration-300'>
-      <img src="/Home/portfolio/tailwindLand.png" alt="Land page img" className='w-auto h-64 rounded-t' />
-      <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
-        <a href="https://qutibaalqasim.github.io/LandingPage-Tailwind/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
-        <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
-      </div>
+  </div>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/FrontEnd/tailwindLand.png" alt="Land page img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://qutibaalqasim.github.io/LandingPage-Tailwind/" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>LandingPage</a>
+      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
+  </div>
 </div>
 
+)}
 
-<div>
+{active == 'BackEnd' && (
+  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[18px] md:gap-4 mt-8 md:mt-16 mb-24 md:mb-36 '>
 
+   
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/BackEnd/sequlizeProject.png" alt="ums project img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://github.com/qutibaalqasim/ums" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>UMS</a>
+      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+    </div>
+  </div>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/BackEnd/sequlizeProject.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://github.com/qutibaalqasim/SMS" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>SMS</a>
+      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+    </div>
+  </div>
+  
 </div>
+)}
+
+
 
 
 </div>
