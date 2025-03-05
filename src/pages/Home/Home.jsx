@@ -245,7 +245,9 @@ export default function Home() {
     <img src="/Home/portfolio/BackEnd/sequlizeProject.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
     <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
       <a href="https://github.com/qutibaalqasim/SMS" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>SMS</a>
-      <button className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+      <button 
+      onClick={()=> setClicked('sms')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
   </div>
   
@@ -415,6 +417,45 @@ export default function Home() {
              </div>
              <div className='pt-2'>
              <a href="https://documenter.getpostman.com/view/39962009/2sAYXBHLQt" className='hover:text-[#FD6F00] duration-200'>View Api Documentation</a>
+             </div>
+          </div>
+          
+    </div>  
+    )}
+
+{click == 'sms' && (
+    <div className='fixed top-0  rounded w-full h-screen'>
+      
+        <button
+        onClick={()=>setClicked(null)}
+        className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+        </button>
+     
+          <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+          <h2 className='font-bold text-white text-6xl pt-2'>Student Management System</h2>
+          <p className='font-medium text-base text-slate-300 pt-2'>
+           SMS is a Back-End project the user can register and login with confirm email , 
+           it using many packeges (joi, nodemailer, jwt , express, bcryptjs , multer and cloudinary)
+           it let the registered user to add a students with details and let him to update their photos 
+            this project is like a billboard for the students in universities to know about the excellent students the user should be an 
+            doctor or an employee from the University and every user has a responsiple on his university 
+             </p>
+             <div className='pt-2'>
+              <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+              <ul>
+                <li className='text-slate-300 text-base '>Nodejs</li>
+                <li className='text-slate-300 text-base '>Sequelize</li>
+                <li className='text-slate-300 text-base '>express</li>
+                <li className='text-slate-300 text-base '>joi</li>
+                <li className='text-slate-300 text-base '>jsonwebtoken</li>
+                <li className='text-slate-300 text-base '>bcryptjs</li>
+                <li className='text-slate-300 text-base '>multer</li>
+                <li className='text-slate-300 text-base '>cloudinary</li>
+              </ul>
+             </div>
+             <div className='pt-2'>
+             <a href="https://documenter.getpostman.com/view/39962009/2sAYXBHfWm" className='hover:text-[#FD6F00] duration-200'>View Api Documentation</a>
              </div>
           </div>
           
