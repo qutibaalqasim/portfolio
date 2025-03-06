@@ -72,7 +72,7 @@ export default function Home() {
 
 <div id='AboutMe' className='wrapper mt-24 md:mt-36'>
   <h2 className='font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center'>AboutMe</h2>
-  <p className='font-medium text-base md:text-xl text-[#707070] text-center mt-4'>Front-End and Back-End Developer</p>
+  <p className='font-medium text-base md:text-xl text-[#707070] text-center mt-4'>Full-Stack Developer</p>
 
   <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-16 md:gap-24 mt-16  md:mt-10'>
     
