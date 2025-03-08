@@ -28,7 +28,7 @@ export default function Footer() {
           <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
-          <a href='#Footer' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
+          <a href='#ContactMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
         </li>
       </ul>
       <div className='flex items-center justify-center mt-4 gap-5'>
