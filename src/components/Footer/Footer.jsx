@@ -13,22 +13,52 @@ export default function Footer() {
       
       <ul className='flex items-center justify-center flex-wrap gap-16 mt-0'>
         <li>
-          <a href='#home' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</a>
+          <a href='#home' 
+           onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Home</a>
         </li>
         <li>
-          <a href='#services' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</a>
+          <a href='#services' 
+           onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Services</a>
         </li>
         <li>
-          <a href='#AboutMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
+          <a href='#AboutMe' 
+           onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#AboutMe').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>AboutMe</a>
         </li>
         <li>
-          <a href='#Skills' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Skills</a>
+          <a href='#Skills' 
+           onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#Skills').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>Skills</a>
         </li>
         <li>
-          <a href='#Portfolio' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
+          <a href='#Portfolio'
+           onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#Portfolio').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>PortFolio</a>
         </li>
         <li>
-          <a href='#ContactMe' className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
+          <a href='#ContactMe' 
+           onClick={(e) => {
+            e.preventDefault();
+            document.querySelector('#ContactMe').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className='text-navLink font-medium text-xl hover:text-[#FD6F00] duration-200'>ContactMe</a>
         </li>
       </ul>
       <div className='flex items-center justify-center mt-4 gap-5'>

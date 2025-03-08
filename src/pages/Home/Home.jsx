@@ -487,7 +487,7 @@ export default function Home() {
     )}
 
 
-  <div id='ContactMe' className="wrapper">
+  <div id='ContactMe' className="wrapper mb-6">
   <h2 className="font-bold text-2xl md:text-4xl text-[#FEFEFE] text-center mb-2">ContactMe</h2>
   <form ref={form} onSubmit={sendEmail}>
     <div className=" mb-6">
