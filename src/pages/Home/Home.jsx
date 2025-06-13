@@ -102,10 +102,9 @@ export default function Home() {
     
     <img src="/Home/AboutMe/AboutMe.png" alt="AboutMe img.png" className=' bg-[#5757571c] rounded-full cursor-pointer hover:bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] duration-500'/>
     <p className='font-medium text-base/8 md:text-xl/8 text-[#959595] text-center font-stretch-expanded'>
-      My name is Qutiba Ahmad Ismael Abdaljawwad I'm 26 years old, I'm a Full-Stack Devloper, I got a bachelores degree in computer Science from
-      Alquds-University in 2024 , I joined a Full-Stack Course with Knowledge Academy From 7th March 2024 to 10th March 2025.
-      before this course I was training in Dimension Company (Lua, js, etc...) about 6 months, and worked with Reach company (call Center) about 3 months.
-      now I just learning more and more about full-stack development to improve myself for this position. 
+      My name is Qutiba Ahmad Ismael Abdaljawwad, a 26-year-old Full-Stack Developer with a Bachelor's degree in Computer Science from Al-Quds University, earned in 2024. I am currently enrolled in a comprehensive Full-Stack Development program with Knowledge Academy, running from March 7, 2024, to March 10, 2025. Prior to this, I completed a six-month training program at Dimension Company, where I worked with technologies such as Lua and JavaScript. Additionally, I gained experience working at Reach Company as a call center agent for three months. I am continuously expanding my skills and deepening my knowledge in full-stack development to prepare myself for professional opportunities in the field.
+
+ 
     </p>
   </div>
 </div>
@@ -148,10 +147,6 @@ export default function Home() {
       <span className='font-bold text-2xl text-[#959595]'>Tailwind</span>
     </div>
     <div className='flex flex-col justify-center items-center'>
-      <img src="/Home/skils/react.svg" alt="React logo" />
-      <span className='font-bold text-2xl text-[#959595]'>React</span>
-    </div>
-    <div className='flex flex-col justify-center items-center'>
       <img src="/Home/skils/nodejs.svg" alt="NodeJs logo" />
       <span className='font-bold text-2xl text-[#959595]'>NodeJs</span>
     </div>
@@ -164,6 +159,14 @@ export default function Home() {
       <span className='font-bold text-2xl text-[#959595]'>Sequalize</span>
     </div>
     <div className='flex flex-col justify-center items-center'>
+      <img src="/Home/skils/MongoDb.svg" alt="MongoDB logo" />
+      <span className='font-bold text-2xl text-[#959595]'>MongoDB</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
+      <img src="/Home/skils/mongoose.png" alt="Mongoose logo" className='w-20 h-24' />
+      <span className='font-bold text-2xl text-[#959595]'>Mongoose</span>
+    </div>
+    <div className='flex flex-col justify-center items-center'>
       <img src="/Home/skils/java.svg" alt="java logo" className='w-20 h-24' />
       <span className='font-bold text-2xl text-[#959595]'>java</span>
     </div>
@@ -173,12 +176,8 @@ export default function Home() {
 <h4 className='font-bold text-3xl md:text-4xl text-[#959595] mt-2'>Learning:</h4>
 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 md:mt-20 gap-4'>
     <div className='flex flex-col justify-center items-center'>
-      <img src="/Home/skils/MongoDb.svg" alt="MongoDB logo" />
-      <span className='font-bold text-2xl text-[#959595]'>MongoDB</span>
-    </div>
-    <div className='flex flex-col justify-center items-center'>
-      <img src="/Home/skils/mongoose.png" alt="Mongoose logo" className='w-20 h-24' />
-      <span className='font-bold text-2xl text-[#959595]'>Mongoose</span>
+      <img src="/Home/skils/react.svg" alt="React logo" />
+      <span className='font-bold text-2xl text-[#959595]'>React</span>
     </div>
     <div className='flex flex-col justify-center items-center'>
       <img src="/Home/skils/redux.svg" alt="Redux logo" className='w-20 h-24' />
@@ -266,11 +265,29 @@ export default function Home() {
     </div>
   </div>
   <div className='px-0 md:px-20 hover:px-0 duration-300'>
-    <img src="/Home/portfolio/BackEnd/sequlizeProject.png" alt="bootstrap project img" className='w-auto h-64 rounded-t' />
+    <img src="/Home/portfolio/BackEnd/sequlizeProject.png" alt="sms project img" className='w-auto h-64 rounded-t' />
     <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
       <a href="https://github.com/qutibaalqasim/SMS" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>SMS</a>
       <button 
       onClick={()=> setClicked('sms')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+    </div>
+  </div>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/BackEnd/mongooseProject.jpg" alt="qShop project img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://github.com/qutibaalqasim/QShop_Back" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>QShop</a>
+      <button 
+      onClick={()=> setClicked('qshop')}
+      className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
+    </div>
+  </div>
+  <div className='px-0 md:px-20 hover:px-0 duration-300'>
+    <img src="/Home/portfolio/BackEnd/mongooseProject.jpg" alt="3leina project img" className='w-auto h-64 rounded-t' />
+    <div className='flex justify-between items-center flex-wrap bg-[#5757571c] rounded-b'>
+      <a href="https://github.com/qutibaalqasim/3leina" className='font-bold text-base text-[#C6C6C6] m-4 hover:text-[#FD6F00] duration-200'>3leina</a>
+      <button 
+      onClick={()=> setClicked('3leina')}
       className='font-bold text-base text-[#959595] m-4 hover:text-[#FD6F00] duration-200'>Categories</button>
     </div>
   </div>
@@ -421,10 +438,16 @@ export default function Home() {
           <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
           <h2 className='font-bold text-white text-6xl pt-2'>User Management System</h2>
           <p className='font-medium text-base text-slate-300 pt-2'>
-           UMS is a Back-End project the user can register and login with confirm email , 
-           it using many packeges (joi, nodemailer, jwt , express, bcryptjs , multer and cloudinary)
-           it let the registered user to add a blug with details and let him to update their photos 
-           it's a training project. 
+           UMS (User Management System) is a back-end training project that provides user registration and login functionality with email confirmation. 
+           The system is built using Express.js and incorporates several key packages and technologies, including: 
+           1- Joi for data validation
+           2- Nodemailer for sending email confirmations
+           3- JWT for authentication and authorization
+           4- Bcryptjs for password hashing
+           5- Multer and Cloudinary for handling and storing user-uploaded images
+           
+           Registered users can create blog posts with detailed content and update their profile photos. 
+           This project was developed as part of my training to enhance my practical skills in building secure and feature-rich backend systems.
              </p>
              <div className='pt-2'>
               <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
@@ -440,7 +463,7 @@ export default function Home() {
               </ul>
              </div>
              <div className='pt-2'>
-             <a href="https://documenter.getpostman.com/view/39962009/2sAYXBHLQt" className='hover:text-[#FD6F00] duration-200'>View Api Documentation</a>
+             <a href="https://ums-otog.onrender.com/" className='hover:text-[#FD6F00] duration-200'>View results with online demo</a>
              </div>
           </div>
           
@@ -459,11 +482,17 @@ export default function Home() {
           <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
           <h2 className='font-bold text-white text-6xl pt-2'>Student Management System</h2>
           <p className='font-medium text-base text-slate-300 pt-2'>
-           SMS is a Back-End project the user can register and login with confirm email , 
-           it using many packeges (joi, nodemailer, jwt , express, bcryptjs , multer and cloudinary)
-           it let the registered user to add a students with details and let him to update their photos 
-            this project is like a billboard for the students in universities to know about the excellent students the user should be an 
-            doctor or an employee from the University and every user has a responsiple on his university 
+                 SMS (Student Management System) is a back-end training project designed to manage and highlight outstanding students within universities. 
+                 The system allows authorized users—such as university doctors or employees or students—to register and log in, with email confirmation implemented for added security.
+                  The project utilizes Express.js and incorporates several key packages and technologies, including:
+                  1- User authentication and authorization using JWT, with secure password handling via bcryptjs
+                  2- Data validation using Joi to ensure the integrity of user inputs
+                  3- Multer and Cloudinary for handling and storing user-uploaded images, allowing students to showcase their achievements visually
+                  4- Nodemailer for sending email confirmations to users upon registration
+                  5- Express.js as the core server framework
+                  the universities has an admin for each one to manage the students and their data,
+                  the students can put a comment or reaction on the posts of the university.
+
              </p>
              <div className='pt-2'>
               <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
@@ -479,12 +508,119 @@ export default function Home() {
               </ul>
              </div>
              <div className='pt-2'>
-             <a href="https://documenter.getpostman.com/view/39962009/2sAYXBHfWm" className='hover:text-[#FD6F00] duration-200'>View Api Documentation</a>
+             <a href="https://sms-tz60.onrender.com/" className='hover:text-[#FD6F00] duration-200'>View results with online demo</a>
              </div>
           </div>
           
     </div>  
     )}
+
+{click == 'qshop' && (
+<div className='fixed top-0  rounded w-full h-screen'>
+  
+    <button
+    onClick={()=>setClicked(null)}
+    className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+    </button>
+  
+      <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+      <h2 className='font-bold text-white text-6xl pt-2'>QShop</h2>
+      <p className='font-medium text-base text-slate-300 pt-2'>
+              QShop is a back-end training project designed to manage and facilitate the buying and selling of products of a clothes store.
+              The system allows users to register and log in, with email confirmation implemented for added security.
+              The project utilizes Express.js and incorporates several key packages and technologies, including:
+              1- User authentication and authorization using JWT, with secure password handling via bcryptjs
+              2- Data validation using Joi to ensure the integrity of user inputs
+              3- Multer and Cloudinary for handling and storing user-uploaded images, allowing users to showcase their products visually
+              4- Nodemailer for sending email confirmations to users upon registration
+              5- Express.js as the core server framework
+              the users could buy products of a clothes store through this platform.
+              The system also includes features for managing product listings, processing orders.
+              Users can browse products by categories, add them to their cart, and proceed to checkout.
+          </p>
+          <div className='pt-2'>
+          <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+          <ul>
+            <li className='text-slate-300 text-base '>Nodejs</li>
+            <li className='text-slate-300 text-base '>mongoose</li>
+            <li className='text-slate-300 text-base '>express</li>
+            <li className='text-slate-300 text-base '>joi</li>
+            <li className='text-slate-300 text-base '>jsonwebtoken</li>
+            <li className='text-slate-300 text-base '>bcryptjs</li>
+            <li className='text-slate-300 text-base '>multer</li>
+            <li className='text-slate-300 text-base '>cloudinary</li>
+            <li className='text-slate-300 text-base '>nodemailer</li>
+            <li className='text-slate-300 text-base '>slugify</li>
+            <li className='text-slate-300 text-base '>cors</li>
+            <li className='text-slate-300 text-base '>dotenv</li>
+          </ul>
+          </div>
+          <div className='pt-2'>
+          <a href="https://qshop-back.onrender.com/" className='hover:text-[#FD6F00] duration-200'>View results with online demo</a>
+          </div>
+      </div>
+      
+</div>  
+)}
+
+{click == '3leina' && (
+<div className='fixed top-0  rounded w-full h-screen'>
+  
+    <button
+    onClick={()=>setClicked(null)}
+    className='fixed end-0 p-4 hover:drop-shadow-[0_35px_35px_rgba(#BE5300)]'>
+    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512"><path fill="#fd6f00" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+    </button>
+  
+      <div className='z-[999] bg-slate-700 wrapper h-full text-center'>
+      <h2 className='font-bold text-white text-6xl pt-2'>3leina Stage</h2>
+      <p className='font-medium text-base text-slate-300 pt-2'>
+              3leina stage is a back-end project designed to manage the buying and selling of products on the 3leina stage.
+              The system allows users to register and log in, with email confirmation implemented for added security every user can be a seller or buyer.
+              the stage allows users to create products and manage their listings the stage provides a one to one chat feature that allows the users to communicate directly with each other.
+              The project utilizes Express.js and incorporates several key packages and technologies, including:
+              1- User authentication and authorization using JWT, with secure password handling via bcryptjs
+              2- Data validation using Joi to ensure the integrity of user inputs
+              3- Multer and Cloudinary for handling and storing user-uploaded images, allowing users to showcase their products visually
+              4- Nodemailer for sending email confirmations to users upon registration
+              5- Express.js as the core server framework
+              6- Socket.io for real-time communication between users
+              7- MongoDB as the database for storing user and product data
+              8- Mongoose for object data modeling (ODM) with MongoDB
+              the user can create a product and manage it, the user can also chat with other users in real-time.
+              after the user create a product he can add it to the cart and buy it, the user can also add a comment on the product and rate it.
+              and the user can give a suggestions to the admin of the stage.
+              the stage provide a payment system that allows the user to pay for the product using a credit card or cash on delivery.
+              the stage also provides a search feature that allows the user to search for products by name or category.
+              
+          </p>
+          <div className='pt-2'>
+          <h3 className='font-bold text-white text-3xl'>Tools&Technology:</h3>
+          <ul>
+            <li className='text-slate-300 text-base '>Nodejs</li>
+            <li className='text-slate-300 text-base '>mongoose</li>
+            <li className='text-slate-300 text-base '>express</li>
+            <li className='text-slate-300 text-base '>joi</li>
+            <li className='text-slate-300 text-base '>jsonwebtoken</li>
+            <li className='text-slate-300 text-base '>bcryptjs</li>
+            <li className='text-slate-300 text-base '>multer</li>
+            <li className='text-slate-300 text-base '>cloudinary</li>
+            <li className='text-slate-300 text-base '>nodemailer</li>
+            <li className='text-slate-300 text-base '>slugify</li>
+            <li className='text-slate-300 text-base '>cors</li>
+            <li className='text-slate-300 text-base '>dotenv</li>
+            <li className='text-slate-300 text-base '>socket.io</li>
+            <li className='text-slate-300 text-base '>stripe</li>
+          </ul>
+          </div>
+          <div className='pt-1'>
+          <a href="https://threeleina.onrender.com/" className='hover:text-[#FD6F00] duration-200'>View results with online demo</a>
+          </div>
+      </div>
+      
+</div>  
+)}
 
 
   <div id='ContactMe' className="wrapper mb-6">
